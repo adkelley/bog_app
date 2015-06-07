@@ -5,12 +5,13 @@ Rails.application.routes.draw do
   get '/creatures', to: "creatures#index"
   get '/creatures/new', to: "creatures#new", as: "new_creature"
   # rake routes to check this route out
-  get '/creatures/:id', to: "creatures#show", as: "creature"
-  get '/creatures/:id/edit', to: "creatures#edit", as: "edit_creature"
   post '/creatures', to: "creatures#create"
+  get '/creatures/:id', to: "creatures#show", as: "creature"
+
+  get '/creatures/:id/edit', to: "creatures#edit", as: "edit_creature"
 
   # The update route
-  put "/creatures/:id/", to: "creatures#update"
+  patch "/creatures/:id/", to: "creatures#update", as: "update_creature"
 
   # The destroy route
   delete "/creatures/:id", to: "creatures#destroy"
