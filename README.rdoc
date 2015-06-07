@@ -1,11 +1,10 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+=== Bog App
+Researchers are collecting data on a local bog and need app to quickly record field data.
+Our goal is to create a Bog App.
 
-Things you may want to cover:
-
-* Ruby version
+* Ruby version: 2.2.1
 
 * System dependencies
 

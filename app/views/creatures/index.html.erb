@@ -1,6 +1,6 @@
 <% @creatures.each do |creature| %>
-  <div>
-    Name: <%= creature.name %> <br>
-    Description: <%= creature.description %>
-  </div> <br>
+  <h2> <%= creature.name %> </h2>
+  <p> <%= creature.description %> </p>
+  <%= button_to "Delete", creature, method: :delete, data: {
+      confirm: "Are you sure?" } %>
 <% end %>
